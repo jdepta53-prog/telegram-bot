@@ -1,31 +1,13 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = "from telegram import Update
-from telegram.ext import Application, CommandHandler, ContextTypes
-
-TOKEN = "TU_WKLEJ_TOKEN_Z_BOTFATHER"
+TOKEN = "8839688187:AAFX-hg0oqqiDw3u3oaYHv4yI7A832XO8Co"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Cześć! Bot działa! 🤖")
+    await update.message.reply_text("Cześć! Bot działa 🤖")
 
-def main():
-    app = Application.builder().token(TOKEN).build()
-    app.add_handler(CommandHandler("start", start))
-    print("Bot uruchomiony...")
-    app.run_polling()
+app = Application.builder().token(TOKEN).build()
+app.add_handler(CommandHandler("start", start))
 
-if __name__ == "__main__":
-    main()"
-
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Cześć! Bot działa! 🤖")
-
-def main():
-    app = Application.builder().token(TOKEN).build()
-    app.add_handler(CommandHandler("start", start))
-    print("Bot uruchomiony...")
-    app.run_polling()
-
-if __name__ == "__main__":
-    main()
+print("Bot uruchomiony...")
+app.run_polling()
