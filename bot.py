@@ -6,6 +6,7 @@ from telegram import Bot
 
 # Konfiguracja - nazwa Twojej grupy i token bota
 GROUP_SHARE_LINK = "@MojaGrupaBetLab123"
+
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 # Darmowe źródło typów (Feed RSS z analizami i typami)
