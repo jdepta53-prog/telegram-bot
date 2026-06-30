@@ -3,6 +3,20 @@ import time
 import requests
 import xml.etree.ElementTree as ET
 from telegram import Bot
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot działa!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+t = Thread(target=run)
+t.start()
 
 # Konfiguracja - nazwa Twojej grupy i token bota
 GROUP_SHARE_LINK = "@MojaGrupaBetLab123"
